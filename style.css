@@ -524,4 +524,445 @@ font-weight: 500;
     font-size: 2rem;
 }
 
+.contact {
+    background-color: var(--bg-color);
+}
 
+.contact h2 {
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.contact form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: 2rem;
+    border:  2px solid var(--main-color);
+    margin: 1.5rem 0;
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--second-bg-color);
+}
+
+.footer .social {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--main-color);
+}
+
+.footer .social a {
+    font-size: 25px;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .social a:hover {
+    transform: scale(1.2)translateY(-10px);
+    background-color: var(--main-color);
+    color: black;
+    box-shadow: 0 0 025px var(--main-color);
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+color: white;
+border-bottom: 3px solid transparent;
+transition:  0.3s ease-in-out;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid var(--main-color);
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+@media (max-width: 1285px) {
+    html {
+        font-size: 55%;
+    }
+
+    .services-container {
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .timeline-items::before {
+        left: 70px;
+    }
+
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd), .timeline-item:nth-child(even) {
+        padding-left: 37px;
+    }
+
+    .timeline-dot {
+        left: 0;
+    }
+
+    .services {
+        padding-bottom: 7rem;
+    }
+
+    .testimonials .wrapper {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .contact form {
+        flex-direction: column;
+    }
+
+   .footer {
+    padding: 2rem 3%;
+   }
+}
+
+@media (max-width: 895px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: rgba(0, 0, 0, .8);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+    }
+    
+    .home {
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 8rem;
+        margin-top: 3rem;
+    }
+
+    .home-content p {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .home-img img {
+        width: 56vw;
+    }
+
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .header {
+        padding: 2rem 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        margin: 5rem 2rem;
+    }
+
+    .home-content h3 {
+        font-size: 3.5rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-content p {
+        font-size: 2rem;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .home-img img {
+        width: 70vw;
+    }
+
+    .social-icons a {
+        margin: 2rem 1rem 2rem 0;
+    }
+
+    .btn-group {
+        margin: 5rem 0;
+        flex-direction:row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 16rem;
+    }
+
+    .text-animation {
+        font-size: 4rem;
+        min-width: 200px;
+    }
+
+    .heading {
+        font-size: 5rem;
+    }
+
+    .education {
+        padding: 50px 10px;
+    }
+
+    .timeline-items {
+        max-width: 350px;
+    }
+
+    .timeline-items::before {
+        left: 50px;
+    }
+
+    .timeline-item:nth-child(odd), .timeline-item:nth-child(even) {
+        padding-left: 25px;
+    }
+
+    .timeline-dot {
+        left: 0;
+    }
+
+    .timeline-content {
+        padding: 20px 30px;
+    }
+
+    .timeline-content h3 {
+        font-size: 16px;
+    }
+
+    .timeline-item {
+        margin-bottom: 20px;
+        width: 100%;
+        position: relative;
+    }
+
+    .timeline-dot {
+        height: 15px;
+        width: 15px;
+        left: 45px;
+    }
+
+    .timeline-date {
+        margin-left: 20%;
+    }
+
+    .timeline-content p {
+        font-size: 14px;
+    }
+
+    .services {
+        padding-bottom: 5rem;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .service-box {
+        height: 250px;
+    }
+
+    .service-info h4 {
+        font-size: 2rem;
+    }
+
+    .service-info p {
+        font-size: 1.4rem;
+        max-height: 80px;
+    }
+
+    .testimonials .wrapper {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .testimonial-item {
+        min-height: 450px;
+        max-width: 300px;
+        padding: 20px 40px;
+    }
+
+    .testimonial-item h2 {
+        font-size: 2rem;
+    }
+
+    .testimonial-item p {
+        font-size: 1rem;
+    }
+
+    .contact form {
+        flex-direction: column;
+        margin: 3rem auto;
+    }
+
+    .contact form .input-box input,
+    .contact form textarea {
+        padding: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .footer {
+        padding: 2rem 2%;
+    }
+
+    .footer .social a {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .footer ul li {
+        padding: 0 10px;
+    }
+
+        /* Explicação:
+
+    Este código CSS é direcionado a dispositivos com largura máxima de 450px. Faz os seguintes ajustes para garantir que o layout do site se adapte bem a telas menores:
+    Tamanho da fonte: Reduz o tamanho geral da fonte para 50% para tornar o texto mais legível.  
+    Cabeçalho: Reduz o preenchimento para um cabeçalho mais compacto.
+
+    Seção inicial:
+    Altera a direção flexível para coluna reversa para empilhar o conteúdo e a imagem verticalmente.    
+    Ajusta as margens para melhor espaçamento.
+    Reduz tamanhos de fonte para títulos e parágrafos.
+    Ajusta a largura da imagem para caber na tela.
+    Ícones Sociais: Reduz as margens para melhor espaçamento.
+    Grupo de botões: altera a direção flexível da coluna para empilhar os botões verticalmente.
+    Animação de texto: reduz o tamanho da fonte e a largura mínima.
+    Título: Reduz o tamanho da fonte.
+    Seção de Educação: Reduz o preenchimento.
+
+    Linha do tempo:
+    Reduz a largura máxima do contêiner da linha do tempo
+    Ajusta a posição da linha do tempo e dos itens da linha do tempo.
+    Reduz o preenchimento e o tamanho da fonte do conteúdo da linha do tempo.
+
+    Seção de Serviços:
+    Reduz o preenchimento.
+    Altera as colunas do modelo de grade para 1 para exibir serviços em uma única coluna.
+    Ajusta a altura e o tamanho da fonte das caixas de serviço.
+
+    Depoimentos:
+    Altera as colunas do modelo de grade para 1 para exibir depoimentos em uma única coluna.
+    Ajusta a altura mínima, largura máxima e preenchimento para itens de depoimento.
+    Reduz tamanhos de fonte para títulos e parágrafos.
+
+    Formulário de Contato:
+    Altera a direção flexível para coluna para empilhar os elementos do formulário verticalmente.
+    Ajusta margens e preenchimento de elementos de formulário.
+    
+    Rodapé:
+    Reduz o preenchimento.
+    Ajusta tamanhos e dimensões de fontes para ícones sociais e itens de lista.
+    Esses ajustes garantem que o conteúdo do site permaneça acessível e visualmente atraente em telas menores. */
+}
