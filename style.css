@@ -154,8 +154,8 @@ span{
     height: 4.5rem;
     background: transparent;
     border: 2px solid var(--main-color);
+    font-size: 2.5rem;
     border-radius: 50%;
-    font-size: 2rem;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease-in-out;    
@@ -172,11 +172,11 @@ span{
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
-    border-radius: 4rem;
     box-shadow: 0 0 25px var(--main-color);
+    border-radius: 4rem;
     font-size: 1.6rem;
     color: black;
-    border: 2px solid var(--main-color);
+    border: 2px solid transparent;
     letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.3s ease-in-out;
@@ -208,7 +208,7 @@ span{
 }
 
 .text-animation {
-    font-size: 34px;
+    font-size: 24px;
     font-weight: 600;
     min-width: 280px;
 }
@@ -218,13 +218,13 @@ span{
 }
 
 .text-animation span::before {
-    content: "Desenvolvedor Web";
+    content: "Web Developer";
     position: absolute;
     background-color: var(--bg-color);
 }
 
 .text-animation span::after {
-    content: "Desenvolvedor Web";
+    content: "";
     position: absolute;
     background-color: var(--bg-color);
     width: calc(100% + 8px);
